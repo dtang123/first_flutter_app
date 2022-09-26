@@ -33,19 +33,25 @@ class MyAppState extends State<MyApp> {
         ),
         body: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   'Dookie',
                   style: TextStyle(
                     color: textColor,
+                    fontSize: 100,
                   ),
                 ),
-                IconButton(
+                SizedBox(
+                  height: 256.0,
+                  width: 256.0,
+                  child: IconButton(
                   icon: Image(image: AssetImage('images/pile-of-poo_1f4a9.gif')),
                   onPressed: () {
                   poopClicked();
-                },
-                ),
+                },),
+                )
             ],)
           ),
         ),
